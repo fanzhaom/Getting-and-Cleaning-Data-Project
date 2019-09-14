@@ -1,0 +1,34 @@
+This is the codebook for the newData dataset. 
+It comes from updating existing codebooks in the UCI HAR Dataset.
+
+The dataset has 180 observations and 69 variables in total.
+
+subject: 
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years.
+They are assigned with number 1-30.
+
+activity:
+Each person performed six activities: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING.
+
+set:
+Subjects were assigned to 2 groups: train and test for further study.
+
+timeBodyAccMeaninXaxis to freqBodyGyroJerkMagSTD:
+We extracted 66 mesurements from the original dataset. 
+33 of them are mean value of mesurement, and the other half are standard deviation.
+We grouped the data by subject and activity, then summarized them by calculating the average of each variable.
+
+anything started with time: time domain signals
+anything started with freq: frequency domain signals
+
+Acc: accelerometer sensor signals
+gyro: gyroscope sensor signals
+
+Mag: magnitude
+
+inXaxis: data captured in X axis
+inYaxis: data captured in Y axis
+inZaxis: data captured in Z axis
+
+The unit for Acc is metres per second per second (m/s^2)
+The unit for Gyro is radian per second (rad/s)
