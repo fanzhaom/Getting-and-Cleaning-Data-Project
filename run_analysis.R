@@ -47,6 +47,10 @@ names(total) <- sub("^t", "time", names(total))
 names(total) <- sub("^f", "freq", names(total))
 names(total) <- gsub("std", "STD", names(total))
 names(total) <- gsub("mean", "Mean", names(total))
+names(total) <- sub("BodyBody", "Body", names(total))
+names(total) <- sub("X$", "inXaxis", names(total))
+names(total) <- sub("Y$", "inYaxis", names(total))
+names(total) <- sub("Z$", "inZaxis", names(total))
 
 # group the data by subject, activity and set
 # summaise to get mean for each measurement
